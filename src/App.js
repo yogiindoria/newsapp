@@ -7,8 +7,8 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 import LoadingBar from 'react-top-loading-bar'
 
 const App = ()=> {
-  const pageSize = 5;
-  const apiKey = "57c682628c3343eab7b3618226c9da82"
+  const pageSize = 6;
+  const apiKey = process.env.REACT_APP_NEWS_API
   const [progress, setProgress] = useState(0)
  
     return (

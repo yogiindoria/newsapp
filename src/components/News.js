@@ -35,6 +35,7 @@ const News = (props) => {
   useEffect(() => {
     document.title = `${capitaliseFunc(props.category)} - NewsHub`;
     updateNews();
+    // eslint-disable-next-line
   }, [])
 
 
@@ -50,7 +51,7 @@ const News = (props) => {
 
     return (
       <>
-        <h2 className="text-center" style={ { margin: '35px 0px' }}> NewsHub - Top {capitaliseFunc(props.category)} Headlines </h2>
+        <h2 className="text-center" style={ { margin: '100px 0px 30px 0px' }}> NewsHub - Top {capitaliseFunc(props.category)} Headlines </h2>
         <InfiniteScroll
           dataLength={articles.length}
           next={fetchMoreData}
